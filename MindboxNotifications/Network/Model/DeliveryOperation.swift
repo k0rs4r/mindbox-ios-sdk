@@ -25,7 +25,7 @@ class PushDeliveryOperation: Operation {
             return _isFinished
         }
         set {
-            if #available(iOS 11.0, *) {
+            if #available(iOS 13.0, *) {
                 willChangeValue(for: \.isFinished)
                 _isFinished = newValue
                 didChangeValue(for: \.isFinished)
